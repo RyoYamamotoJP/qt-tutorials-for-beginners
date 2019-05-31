@@ -17,7 +17,7 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>150</x>
       <y>40</y>
       <width>224</width>
       <height>141</height>
@@ -63,6 +63,19 @@
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_pic">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>111</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
