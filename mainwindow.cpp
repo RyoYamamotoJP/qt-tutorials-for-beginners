@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QFile>
+#include <QFileDialog>
 #include <QTextStream>
 #include <QMessageBox>
 
@@ -31,7 +32,9 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    QFile file("/Users/ryo/work/QFileDemo/myfile.txt");
+    QString filter = "All File (*.*) ;; Text File (*.txt) ;; XML (*.xml)";
+    QString file_name = QFileDialog::getOpenFileName(this, "open a file", "/", filter);
+    QFile file(file_name);
     if (!file.open(QFile::ReadOnly | QFile::Text)) {
         QMessageBox::warning(this, "title", "file not open");
     }
