@@ -44,6 +44,8 @@ private slots:
 
     void on_actionBackground_Color_Edit_Text_triggered();
 
+    void on_actionPrint_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString file_path;
