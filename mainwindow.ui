@@ -51,6 +51,9 @@
     <addaction name="actionUndo"/>
     <addaction name="separator"/>
     <addaction name="actionFont"/>
+    <addaction name="actionColor"/>
+    <addaction name="actionBackground_Color"/>
+    <addaction name="actionBackground_Color_Edit_Text"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
     <property name="title">
@@ -177,6 +180,21 @@
   <action name="actionFont">
    <property name="text">
     <string>Font</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionBackground_Color">
+   <property name="text">
+    <string>Background Color</string>
+   </property>
+  </action>
+  <action name="actionBackground_Color_Edit_Text">
+   <property name="text">
+    <string>Background Color Edit Text</string>
    </property>
   </action>
  </widget>
