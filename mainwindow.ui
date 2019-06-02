@@ -49,6 +49,8 @@
     <addaction name="separator"/>
     <addaction name="actionRedo"/>
     <addaction name="actionUndo"/>
+    <addaction name="separator"/>
+    <addaction name="actionFont"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
     <property name="title">
@@ -170,6 +172,11 @@
    </property>
    <property name="text">
     <string>About Notepad</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="text">
+    <string>Font</string>
    </property>
   </action>
  </widget>

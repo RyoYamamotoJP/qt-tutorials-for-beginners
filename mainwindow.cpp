@@ -4,6 +4,8 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include <QMessageBox>
+#include <QFontDialog>
+#include <QFont>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -102,4 +104,14 @@ void MainWindow::on_actionAbout_Notepad_triggered()
     about_text += "Date : 02/06/2019\n";
     about_text += "(C) Notepad(R)\n";
     QMessageBox::about(this, "About Notepad", about_text);
+}
+
+void MainWindow::on_actionFont_triggered()
+{
+    bool ok;
+    QFont font = QFontDialog::getFont(&ok, this);
+    if (ok)
+        ui->textEdit->setFont(font);
+    else
+        return;
 }
